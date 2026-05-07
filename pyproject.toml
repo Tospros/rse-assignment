@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "physics-units"
+version = "0.1.0"
+description = "Simple physics calculations using Pint"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Your Name"}
+]
+dependencies = [
+    "pint"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "mkdocs",
+    "mkdocs-material"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
